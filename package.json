@@ -19,5 +19,8 @@
   "license": "ISC",
   "devDependencies": {
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "web3": "^4.16.0"
   }
 }

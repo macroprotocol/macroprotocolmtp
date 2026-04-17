@@ -51,3 +51,4 @@ build/
 *.sln
 *.sw? 
 .vercel
+.env*.local

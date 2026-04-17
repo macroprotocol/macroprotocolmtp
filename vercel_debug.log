@@ -1,0 +1,128 @@
+> [debug] [2026-04-09T15:36:03.989Z] Found config in file "C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolwebsite\vercel.json"
+> [debug] [2026-04-09T15:36:03.992Z] Vercel CLI 50.42.0
+> [debug] [2026-04-09T15:36:03.998Z] Agent/TTY/nonInteractive: isAgent=true agentName=antigravity stdin.isTTY=true --non-interactive=false explicitFalse=false => nonInteractive=false
+> [debug] [2026-04-09T15:36:03.999Z] user supplied known subcommand: "deploy"
+> [debug] [2026-04-09T15:36:04.098Z] Setting target to production
+> [debug] [2026-04-09T15:36:04.126Z] Spinner invoked (Retrieving projectΓÇª) with a 1000ms delay
+> [debug] [2026-04-09T15:36:04.129Z] Valid access token, skipping token refresh.
+> [debug] [2026-04-09T15:36:04.248Z] #1 ΓåÆ GET https://api.vercel.com/teams/team_2dkvar8PNqzu2JtBDekziKMk
+> [debug] [2026-04-09T15:36:04.251Z] #2 ΓåÆ GET https://api.vercel.com/v9/projects/prj_r79bbz2LvAPdxdJEwsUBEBWWniBT?teamId=team_2dkvar8PNqzu2JtBDekziKMk
+> [debug] [2026-04-09T15:36:04.978Z] #2 ΓåÉ 200 OK: sfo1::bgh4q-1775748949371-9d285117713c [727ms]
+> [debug] [2026-04-09T15:36:05.017Z] #1 ΓåÉ 200 OK: sfo1::zz7dn-1775748949413-b45343fe8ab9 [769ms]
+> [debug] [2026-04-09T15:36:05.420Z] Spinner invoked (Deploying mtps-projects-f67239f1/macroprotocolwebsite) with a 0ms delay
+[client-debug] 2026-04-09T15:36:05.422Z Creating deployment...
+[client-debug] 2026-04-09T15:36:05.422Z Provided 'path' is a directory.
+[client-debug] 2026-04-09T15:36:05.429Z Found 26 rules in .vercelignore
+[client-debug] 2026-04-09T15:36:05.430Z Building file tree...
+[client-debug] 2026-04-09T15:36:05.450Z Found 20 files in the specified directory
+[client-debug] 2026-04-09T15:36:05.460Z Yielding a 'hashes-calculated' event with 19 hashes
+> [debug] [2026-04-09T15:36:05.462Z] #3 ΓåÆ GET https://api.vercel.com/v9/projects/macroprotocolwebsite?teamId=team_2dkvar8PNqzu2JtBDekziKMk
+> [debug] [2026-04-09T15:36:05.750Z] #3 ΓåÉ 200 OK: sfo1::xkxrz-1775748950120-7e8fd062fd97 [288ms]
+[client-debug] 2026-04-09T15:36:05.753Z Using provided API URL: https://api.vercel.com
+[client-debug] 2026-04-09T15:36:05.753Z Using provided user agent: vercel 50.42.0 node-v22.13.1 win32 (x64)
+[client-debug] 2026-04-09T15:36:05.753Z Setting platform version to harcoded value 2
+[client-debug] 2026-04-09T15:36:05.753Z Creating the deployment and starting upload...
+[client-debug] 2026-04-09T15:36:05.754Z Determining necessary files for upload...
+[client-debug] 2026-04-09T15:36:05.754Z Creating deployment
+[client-debug] 2026-04-09T15:36:05.756Z Sending deployment creation API request
+[client-debug] 2026-04-09T15:36:06.072Z Deployment response: {"error":{"code":"missing_files","message":"Missing files","missing":["4d637aed6d5f8a2f322bb93478a41716513a41c8"]}}
+[client-debug] 2026-04-09T15:36:06.072Z Error: Deployment request status is 400
+[client-debug] 2026-04-09T15:36:06.072Z 1 files are required to upload
+[client-debug] 2026-04-09T15:36:06.073Z Yielding a 'file-count' event
+> [debug] [2026-04-09T15:36:06.073Z] Total files 19, 1 changed
+> [debug] [2026-04-09T15:36:06.075Z] Spinner invoked (Uploading [--------------------] (0.0B/1.6KB)) with a 0ms delay
+[client-debug] 2026-04-09T15:36:06.076Z Building an upload list...
+[client-debug] 2026-04-09T15:36:06.079Z Starting upload
+[client-debug] 2026-04-09T15:36:06.080Z POST https://api.vercel.com/v2/files?teamId=team_2dkvar8PNqzu2JtBDekziKMk
+> [debug] [2026-04-09T15:36:06.084Z] Spinner invoked (Uploading [====================] (1.6KB/1.6KB)) with a 0ms delay
+[client-debug] 2026-04-09T15:36:06.468Z DONE in 387ms: POST https://api.vercel.com/v2/files?teamId=team_2dkvar8PNqzu2JtBDekziKMk
+[client-debug] 2026-04-09T15:36:06.468Z File 4d637aed6d5f8a2f322bb93478a41716513a41c8 (C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolwebsite\vercel_debug.log) uploaded
+[client-debug] 2026-04-09T15:36:06.468Z Yielding a 'file-uploaded' event
+> [debug] [2026-04-09T15:36:06.468Z] Uploaded: C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolwebsite\vercel_debug.log (1.63KB)
+[client-debug] 2026-04-09T15:36:06.468Z All files uploaded
+[client-debug] 2026-04-09T15:36:06.469Z Yielding a 'all-files-uploaded' event
+[client-debug] 2026-04-09T15:36:06.469Z Starting deployment creation
+[client-debug] 2026-04-09T15:36:06.469Z Creating deployment
+[client-debug] 2026-04-09T15:36:06.469Z Sending deployment creation API request
+[client-debug] 2026-04-09T15:36:08.315Z Deployment response: {"alias":["macroprotocolwebsite-mtps-projects-f67239f1.vercel.app","macroprotocolwebsite-macroprotocol-2256-mtps-projects-f67239f1.vercel.app"],"aliasAssigned":false,"automaticAliases":["macroprotocolwebsite-mtps-projects-f67239f1.vercel.app","macroprotocolwebsite-macroprotocol-2256-mtps-projects-f67239f1.vercel.app"],"bootedAt":1775748951621,"buildingAt":1775748951621,"buildSkipped":false,"createdAt":1775748951621,"creator":{"uid":"UFHkm1iXk7Uu6iAgN2qgWCYP","username":"macroprotocol-2256"},"errorLink":"https://vercel.com/docs/deployments/troubleshoot-project-collaboration#team-configuration","id":"dpl_DupVbdVJRpmYdpQh9Ge4UXbK2JTy","initReadyAt":1775748951621,"name":"macroprotocolwebsite","meta":{"githubCommitAuthorName":"tabspirecompany","githubCommitAuthorEmail":"tabspirecompany@gmail.com","githubCommitMessage":"Initial commit with Vite configuration","githubCommitOrg":"macroprotocol","githubCommitRef":"master","githubCommitRepo":"webup","githubCommitSha":"72073e3c3c24117d37a04abaae08573077803aea","githubDeployment":"1","githubOrg":"macroprotocol","githubRepo":"webup","gitDirty":"1","actor":"antigravity"},"originCacheRegion":"iad1","project":{"id":"prj_r79bbz2LvAPdxdJEwsUBEBWWniBT","name":"macroprotocolwebsite","framework":"vite"},"public":false,"ready":1775748951621,"readyState":"ERROR","regions":["iad1"],"source":"cli","status":"ERROR","target":"production","team":{"id":"team_2dkvar8PNqzu2JtBDekziKMk","name":"MTP's projects","slug":"mtps-projects-f67239f1"},"type":"LAMBDAS","url":"macroprotocolwebsite-et93mab0t-mtps-projects-f67239f1.vercel.app","version":2,"previewCommentsEnabled":true,"oidcTokenClaims":{"sub":"owner:mtps-projects-f67239f1:project:macroprotocolwebsite:environment:production","iss":"https://oidc.vercel.com/mtps-projects-f67239f1","scope":"owner:mtps-projects-f67239f1:project:macroprotocolwebsite:environment:production","aud":"https://vercel.com/mtps-projects-f67239f1","owner":"mtps-projects-f67239f1","owner_id":"team_2dkvar8PNqzu2JtBDekziKMk","project":"macroprotocolwebsite","project_id":"prj_r79bbz2LvAPdxdJEwsUBEBWWniBT","environment":"production","plan":"hobby"},"readyStateReason":"Git author tabspirecompany@gmail.com must have access to the team MTP's projects on Vercel to create deployments.","lambdas":[{"id":"bld_b1fgpbcvz","createdAt":1775748952214,"entrypoint":".","readyState":"READY","readyStateAt":1775748952214,"output":[]}],"aliasAssignedAt":null,"alwaysRefuseToBuild":true,"build":{"env":["CI","VERCEL","VERCEL_ENV","VERCEL_TARGET_ENV","TURBO_REMOTE_ONLY","TURBO_RUN_SUMMARY","TURBO_DOWNLOAD_LOCAL_ENABLED","NX_DAEMON","TURBO_CACHE","VERCEL_URL","VERCEL_GIT_PROVIDER","VERCEL_GIT_PREVIOUS_SHA","VERCEL_GIT_REPO_SLUG","VERCEL_GIT_REPO_OWNER","VERCEL_GIT_REPO_ID","VERCEL_GIT_COMMIT_REF","VERCEL_GIT_COMMIT_SHA","VERCEL_GIT_COMMIT_MESSAGE","VERCEL_GIT_COMMIT_AUTHOR_LOGIN","VERCEL_GIT_COMMIT_AUTHOR_NAME","VERCEL_GIT_PULL_REQUEST_ID","TURBO_PLATFORM_ENV","VERCEL_WEB_ANALYTICS_ID","VERCEL_DISCOVER_FOLDER_SIZES","VERCEL_LAMBDA_OUTPUTS_AS_MIDDLEWARE","VERCEL_NEXT_BUNDLED_SERVER","VERCEL_SERVERLESS_FUNCTION_FAILOVER","VERCEL_INVALIDATE_BUILD_CACHE_ON_SIZE_EXCEEDED","VERCEL_EDGE_FNS_ON_WORKERD","VERCEL_EDGE_FNS_ON_WORKERD_UNBUNDLED_FORMAT","VERCEL_EDGE_ON_SERVERLESS_NODE","VERCEL_EDGE_FNS_ON_SERVERLESS","VERCEL_EDGE_FNS_ON_SERVERLESS_USE_FILESYSTEM_CONTENT","VERCEL_NODE_BRIDGE_COMPRESS_MULTI_PAYLOADS","VERCEL_USE_BYTECODE_CACHING","VERCEL_COMPRESS_SERVERLESS_RESPONSE","VERCEL_SET_REQUESTED_AT_PRODUCTION_ON_DEPLOYMENT","VERCEL_COMPACT_POST_LAMBDA","VERCEL_FUNCTIONS_USE_BUN_RUNTIME","VERCEL_FUNCTIONS_USE_EXECUTABLE_RUNTIME","VERCEL_ENABLE_REGIONALIZED_ISR","VERCEL_COMPRESSED_ISR_BILLING","VERCEL_ENABLE_PARALLEL_CACHE_DOWNLOAD","VERCEL_USE_DEFAULT_PNPM_10","VERCEL_ENABLE_PATH_LOOKUP_BLOOM_FILTER","VERCEL_ENABLE_UNCOMPRESSED_LAMBDA_SIZE_CHECK","VERCEL_USE_API_CONNECTORS","VERCEL_EDGE_MIDDLEWARE_WITH_NODEJS_24","VERCEL_EDGE_FUNCTIONS_WITH_NODEJS_24","VERCEL_DETECT_CRYPTO_MINER_IN_BUILD_LOG","NEXT_ENABLE_ADAPTER","VERCEL_SKIP_EDGE_FUNCTION_ENDPOINT","VERCEL_SKIP_FUNCTION_STATE_TRANSITION","VERCEL_BUILD_CONTAINER_COPY_FILES_IN_INIT","VERCEL_DEPLOYMENT_ID","VERCEL_PROJECT_ID","VERCEL_PROJECT_NAME","VERCEL_PROJECT_PRODUCTION_URL","VERCEL_DEPLOYMENT_KEY","VERCEL_OBSERVABILITY_CLIENT_CONFIG","NEXT_PUBLIC_VERCEL_OBSERVABILITY_CLIENT_CONFIG","REACT_APP_VERCEL_OBSERVABILITY_CLIENT_CONFIG","PUBLIC_VERCEL_OBSERVABILITY_CLIENT_CONFIG","VITE_VERCEL_OBSERVABILITY_CLIENT_CONFIG","VERCEL_BUILD_OUTPUTS_POST_LAMBDA_SEMA","VERCEL_EDGE_MIDDLEWARE_MEMORY_SIZE","VERCEL_EDGE_FUNCTIONS_MEMORY_SIZE","VERCEL_EDGE_FUNCTIONS_BATCH_SIZE","VERCEL_OIDC_TOKEN","VERCEL_EDGE_FUNCTIONS_ENABLE_CREATE_FUNC_DEDUPE","VERCEL_EDGE_FUNCTIONS_USE_FILESYSTEM_CONTENT","NEXT_PRIVATE_MULTI_PAYLOAD","VERCEL_RICHER_DEPLOYMENT_OUTPUTS","VERCEL_SERVERLESS_SUSPENSE_CACHE","VERCEL_BUILD_MONOREPO_SUPPORT","VERCEL_USE_ONLY_STREAMING_LAMBDA","VERCEL_USE_STREAMING_PRERENDER","VERCEL_ENABLE_EXTENDED_FALLBACK_PAYLOAD","VERCEL_CLI_ROLLOUT_VERSION","VERCEL_PRERENDER_METADATA_BYPASS_FOR","VERCEL_ENV_ENC_KEY","VERCEL_ENCRYPTED_ENV_CONTENT","VERCEL_ENCRYPTED_ENV_FILENAME"]},"builds":[],"createdIn":"sfo1","env":["CI","VERCEL","VERCEL_ENV","VERCEL_TARGET_ENV","TURBO_REMOTE_ONLY","TURBO_RUN_SUMMARY","TURBO_DOWNLOAD_LOCAL_ENABLED","NX_DAEMON","TURBO_CACHE","VERCEL_URL","VERCEL_GIT_PROVIDER","VERCEL_GIT_PREVIOUS_SHA","VERCEL_GIT_REPO_SLUG","VERCEL_GIT_REPO_OWNER","VERCEL_GIT_REPO_ID","VERCEL_GIT_COMMIT_REF","VERCEL_GIT_COMMIT_SHA","VERCEL_GIT_COMMIT_MESSAGE","VERCEL_GIT_COMMIT_AUTHOR_LOGIN","VERCEL_GIT_COMMIT_AUTHOR_NAME","VERCEL_GIT_PULL_REQUEST_ID","TURBO_PLATFORM_ENV","VERCEL_WEB_ANALYTICS_ID","VERCEL_DISCOVER_FOLDER_SIZES","VERCEL_LAMBDA_OUTPUTS_AS_MIDDLEWARE","VERCEL_NEXT_BUNDLED_SERVER","VERCEL_SERVERLESS_FUNCTION_FAILOVER","VERCEL_INVALIDATE_BUILD_CACHE_ON_SIZE_EXCEEDED","VERCEL_EDGE_FNS_ON_WORKERD","VERCEL_EDGE_FNS_ON_WORKERD_UNBUNDLED_FORMAT","VERCEL_EDGE_ON_SERVERLESS_NODE","VERCEL_EDGE_FNS_ON_SERVERLESS","VERCEL_EDGE_FNS_ON_SERVERLESS_USE_FILESYSTEM_CONTENT","VERCEL_NODE_BRIDGE_COMPRESS_MULTI_PAYLOADS","VERCEL_USE_BYTECODE_CACHING","VERCEL_COMPRESS_SERVERLESS_RESPONSE","VERCEL_SET_REQUESTED_AT_PRODUCTION_ON_DEPLOYMENT","VERCEL_COMPACT_POST_LAMBDA","VERCEL_FUNCTIONS_USE_BUN_RUNTIME","VERCEL_FUNCTIONS_USE_EXECUTABLE_RUNTIME","VERCEL_ENABLE_REGIONALIZED_ISR","VERCEL_COMPRESSED_ISR_BILLING","VERCEL_ENABLE_PARALLEL_CACHE_DOWNLOAD","VERCEL_USE_DEFAULT_PNPM_10","VERCEL_ENABLE_PATH_LOOKUP_BLOOM_FILTER","VERCEL_ENABLE_UNCOMPRESSED_LAMBDA_SIZE_CHECK","VERCEL_USE_API_CONNECTORS","VERCEL_EDGE_MIDDLEWARE_WITH_NODEJS_24","VERCEL_EDGE_FUNCTIONS_WITH_NODEJS_24","VERCEL_DETECT_CRYPTO_MINER_IN_BUILD_LOG","NEXT_ENABLE_ADAPTER","VERCEL_SKIP_EDGE_FUNCTION_ENDPOINT","VERCEL_SKIP_FUNCTION_STATE_TRANSITION","VERCEL_BUILD_CONTAINER_COPY_FILES_IN_INIT","VERCEL_DEPLOYMENT_ID","VERCEL_PROJECT_ID","VERCEL_PROJECT_NAME","VERCEL_PROJECT_PRODUCTION_URL","VERCEL_DEPLOYMENT_KEY","VERCEL_OBSERVABILITY_CLIENT_CONFIG","NEXT_PUBLIC_VERCEL_OBSERVABILITY_CLIENT_CONFIG","REACT_APP_VERCEL_OBSERVABILITY_CLIENT_CONFIG","PUBLIC_VERCEL_OBSERVABILITY_CLIENT_CONFIG","VITE_VERCEL_OBSERVABILITY_CLIENT_CONFIG","VERCEL_BUILD_OUTPUTS_POST_LAMBDA_SEMA","VERCEL_EDGE_MIDDLEWARE_MEMORY_SIZE","VERCEL_EDGE_FUNCTIONS_MEMORY_SIZE","VERCEL_EDGE_FUNCTIONS_BATCH_SIZE","VERCEL_OIDC_TOKEN","VERCEL_EDGE_FUNCTIONS_ENABLE_CREATE_FUNC_DEDUPE","VERCEL_EDGE_FUNCTIONS_USE_FILESYSTEM_CONTENT","NEXT_PRIVATE_MULTI_PAYLOAD","VERCEL_RICHER_DEPLOYMENT_OUTPUTS","VERCEL_SERVERLESS_SUSPENSE_CACHE","VERCEL_BUILD_MONOREPO_SUPPORT","VERCEL_USE_ONLY_STREAMING_LAMBDA","VERCEL_USE_STREAMING_PRERENDER","VERCEL_ENABLE_EXTENDED_FALLBACK_PAYLOAD","VERCEL_CLI_ROLLOUT_VERSION","VERCEL_PRERENDER_METADATA_BYPASS_FOR","VERCEL_ENV_ENC_KEY","VERCEL_ENCRYPTED_ENV_CONTENT","VERCEL_ENCRYPTED_ENV_FILENAME"],"functions":null,"inspectorUrl":"https://vercel.com/mtps-projects-f67239f1/macroprotocolwebsite/DupVbdVJRpmYdpQh9Ge4UXbK2JTy","isInConcurrentBuildsQueue":false,"isInSystemBuildsQueue":false,"ownerId":"team_2dkvar8PNqzu2JtBDekziKMk","plan":"hobby","projectId":"prj_r79bbz2LvAPdxdJEwsUBEBWWniBT","projectSettings":{"buildCommand":"npm run build","devCommand":null,"framework":"vite","commandForIgnoringBuildStep":null,"installCommand":null,"outputDirectory":"dist","speedInsights":{"id":"YgaqfMe5lQcn8K1Tn8RcTDCF7mN","hasData":false},"webAnalytics":{"id":"ebeyMbnVYyK5dZfxmFjUrMXSH","enabledAt":1775747291225},"nodeVersion":"24.x"},"routes":[{"src":"^/(.*)/$","headers":{"Location":"/$1"},"status":308},{"src":"^(?:/(.*))$","headers":{"Cache-Control":"public, max-age=0, must-revalidate"},"continue":true},{"handle":"filesystem"},{"src":"^/whitepaper$","dest":"/whitepaper/index.html","check":true}],"config":{"version":1,"secureComputePrimaryRegion":null,"secureComputeFallbackRegion":null,"functionTimeout":300,"functionType":"fluid","functionMemoryType":"standard","isUsingActiveCPU":true,"resourceConfig":{"buildQueue":{"configuration":"SKIP_NAMESPACE_QUEUE"}}},"seatBlock":{"blockCode":"TEAM_ACCESS_REQUIRED","isVerified":false},"attribution":{"commitMeta":{"name":"tabspirecompany","email":"tabspirecompany@gmail.com","isVerified":false}}}
+[client-debug] 2026-04-09T15:36:08.316Z Deployment created
+[client-debug] 2026-04-09T15:36:08.316Z Yielding a 'created' event
+Inspect: https://vercel.com/mtps-projects-f67239f1/macroprotocolwebsite/DupVbdVJRpmYdpQh9Ge4UXbK2JTy [3s]
+Production: https://macroprotocolwebsite-et93mab0t-mtps-projects-f67239f1.vercel.app [3s]
+> [debug] [2026-04-09T15:36:08.317Z] Spinner invoked (Building...) with a 0ms delay
+> [debug] [2026-04-09T15:36:08.318Z] #4 ΓåÆ GET https://api.vercel.com/v2/user
+[client-debug] 2026-04-09T15:36:08.318Z Waiting for deployment to be ready...
+[client-debug] 2026-04-09T15:36:08.319Z Waiting for builds and the deployment to complete...
+> [debug] [2026-04-09T15:36:08.597Z] #4 ΓåÉ 200 OK: sfo1::l8lvw-1775748952980-ebc41ad5de27 [279ms]
+> [debug] [2026-04-09T15:36:08.599Z] #5 ΓåÆ GET https://api.vercel.com/v3/now/deployments/dpl_DupVbdVJRpmYdpQh9Ge4UXbK2JTy/events?direction=forward&follow=1&format=lines&teamId=team_2dkvar8PNqzu2JtBDekziKMk
+[client-debug] 2026-04-09T15:36:08.862Z Yielding a 'error' event
+> [debug] [2026-04-09T15:36:08.871Z] Retrying: AbortError: The user aborted a request.
+AbortError: The user aborted a request.
+    at abort2 (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-K4DMJBS6.js:39202:23)
+    at AbortSignal.abortAndFinalize2 (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-K4DMJBS6.js:39216:11)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:447:10)
+    at abortSignal (node:internal/abort_controller:433:3)
+    at AbortController.abort (node:internal/abort_controller:466:5)
+    at stopSpinner (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:4318:22)
+    at processDeployment (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:4471:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+> [debug] [2026-04-09T15:36:08.879Z] Error: Error
+Error
+    at Now.handleDeploymentError (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:4716:12)
+    at processDeployment (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:4478:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Now.create (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:4608:24)
+    at async createDeploy (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/commands/deploy/index.js:174:12)
+    at async handleDefaultDeploy (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/commands/deploy/index.js:1492:18)
+    at async _Span.trace (C:\Users\LENOVO\AppData\Local\npm-cache\_npx\67eb4586ca667318\node_modules\@vercel\build-utils\dist\index.js:23773:14)
+    at async main (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/index.js:24203:18)
+> [debug] [2026-04-09T15:36:08.880Z] handling error: Error
+    at Now.handleDeploymentError (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:4716:12)
+    at processDeployment (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:4478:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Now.create (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:4608:24)
+    at async createDeploy (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/commands/deploy/index.js:174:12)
+    at async handleDefaultDeploy (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/commands/deploy/index.js:1492:18)
+    at async _Span.trace (C:\Users\LENOVO\AppData\Local\npm-cache\_npx\67eb4586ca667318\node_modules\@vercel\build-utils\dist\index.js:23773:14)
+    at async main (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/index.js:24203:18)
+Error: Unexpected error. Please try again later. ()
+> [debug] [2026-04-09T15:36:09.868Z] #6 ΓåÆ GET https://api.vercel.com/v3/now/deployments/dpl_DupVbdVJRpmYdpQh9Ge4UXbK2JTy/events?direction=forward&follow=1&format=lines&teamId=team_2dkvar8PNqzu2JtBDekziKMk
+> [debug] [2026-04-09T15:36:09.868Z] Retrying: AbortError: The user aborted a request.
+AbortError: The user aborted a request.
+    at abort2 (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-K4DMJBS6.js:39202:23)
+    at file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-K4DMJBS6.js:39212:11
+    at new Promise (<anonymous>)
+    at fetch (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-K4DMJBS6.js:39195:14)
+    at Client._fetch (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-HODUFQIC.js:4082:38)
+    at async file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-HODUFQIC.js:4087:19
+    at async retries (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:3901:27)
+    at async printEvents (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:3883:3)
+> [debug] [2026-04-09T15:36:10.911Z] Telemetry subprocess killed due to timeout
+> [debug] [2026-04-09T15:36:10.941Z] Telemetry subprocess exited with code null
+> [debug] [2026-04-09T15:36:10.944Z] Spawning C:\Users\LENOVO\AppData\Local\npm-cache\_npx\67eb4586ca667318\node_modules\vercel\dist\get-latest-worker.cjs
+> '[debug] [2026-04-09T15:36:11.062Z] Notifying parent we're ready
+> '[debug] [2026-04-09T15:36:11.071Z] Received message from parent: {
+  cacheFile: 'C:\\Users\\LENOVO\\AppData\\Local\\com.vercel.cli\\Cache\\package-updates\\vercel-latest.json',
+  distTag: 'latest',
+  name: 'vercel',
+  updateCheckInterval: 86400000
+}
+> '[debug] [2026-04-09T15:36:11.071Z] Disconnecting from parent
+> '[debug] [2026-04-09T15:36:11.074Z] Checking lock file: C:\Users\LENOVO\AppData\Local\com.vercel.cli\Cache\package-updates\vercel-latest.lock
+> '[debug] [2026-04-09T15:36:11.076Z] Found lock file with pid: 14248
+> '[debug] [2026-04-09T15:36:11.077Z] Worker already running, exiting
+> [debug] [2026-04-09T15:36:11.877Z] #7 ΓåÆ GET https://api.vercel.com/v3/now/deployments/dpl_DupVbdVJRpmYdpQh9Ge4UXbK2JTy/events?direction=forward&follow=1&format=lines&teamId=team_2dkvar8PNqzu2JtBDekziKMk
+> [debug] [2026-04-09T15:36:11.877Z] Retrying: AbortError: The user aborted a request.
+AbortError: The user aborted a request.
+    at abort2 (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-K4DMJBS6.js:39202:23)
+    at file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-K4DMJBS6.js:39212:11
+    at new Promise (<anonymous>)
+    at fetch (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-K4DMJBS6.js:39195:14)
+    at Client._fetch (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-HODUFQIC.js:4082:38)
+    at async file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-HODUFQIC.js:4087:19
+    at async retries (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:3901:27)
+    at async printEvents (file:///C:/Users/LENOVO/AppData/Local/npm-cache/_npx/67eb4586ca667318/node_modules/vercel/dist/chunks/chunk-GZWSWIV2.js:3883:3)
+> [debug] [2026-04-09T15:36:15.884Z] #8 ΓåÆ GET https://api.vercel.com/v3/now/deployments/dpl_DupVbdVJRpmYdpQh9Ge4UXbK2JTy/events?direction=forward&follow=1&format=lines&teamId=team_2dkvar8PNqzu2JtBDekziKMk
+https://macroprotocolwebsite-et93mab0t-mtps-projects-f67239f1.vercel.app

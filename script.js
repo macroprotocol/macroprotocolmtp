@@ -169,4 +169,92 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-}); 
+});
+
+// Order Card Modal Functions
+window.openOrderModal = function(planName, cost) {
+    const modal = document.getElementById('order-modal');
+    if (!modal) return;
+    
+    // Reset modal state
+    document.querySelector('.modal-body').classList.remove('hidden');
+    const confirmBtn = document.getElementById('confirm-order-btn');
+    confirmBtn.innerHTML = '<i class="fas fa-wallet"></i> Connect Wallet & Pay';
+    confirmBtn.disabled = false;
+    
+    // Set plan details
+    document.getElementById('modal-plan-name').textContent = planName;
+    document.getElementById('modal-plan-cost').textContent = cost + ' MTP';
+    
+    // Calculate 5% reward
+    const reward = (cost * 0.05).toFixed(1);
+    document.getElementById('modal-plan-reward').textContent = '+' + reward + ' MTP';
+    
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+};
+
+window.closeOrderModal = function() {
+    const modal = document.getElementById('order-modal');
+    if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+};
+
+window.processOrder = async function() {
+    const btn = document.getElementById('confirm-order-btn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+    btn.disabled = true;
+    
+    try {
+        // Check if Web3 wallet is available
+        if (typeof window.ethereum === 'undefined') {
+            throw new Error('Please install MetaMask or another Web3 wallet to proceed.');
+        }
+
+        // Request account access
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const account = accounts[0];
+
+        // We simulate a real payment transaction by requesting a 0 ETH transfer
+        // to a dummy address (or just wait for user to confirm the transaction)
+        const transactionParameters = {
+            to: account, // Sending to self for demonstration
+            from: account,
+            value: '0x0', // 0 ETH
+        };
+
+        // Send transaction
+        const txHash = await window.ethereum.request({
+            method: 'eth_sendTransaction',
+            params: [transactionParameters],
+        });
+
+        // Transaction successful
+        closeOrderModal();
+        alert('Payment Successful!');
+        
+        // Update live counter
+        const counter = document.getElementById('cards-ordered-counter');
+        if (counter) {
+            let current = parseInt(counter.textContent);
+            counter.textContent = current + 1;
+        }
+    } catch (error) {
+        console.error("Payment failed:", error);
+        alert("Payment failed or cancelled: " + (error.message || "Unknown error"));
+        // Reset button state
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+    }
+};
+
+// Close modal when clicking outside
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('order-modal');
+    if (event.target === modal) {
+        closeOrderModal();
+    }
+});

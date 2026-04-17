@@ -4,10 +4,38 @@
   "outputDirectory": "dist",
   "trailingSlash": false,
   "cleanUrls": false,
+  "functions": {
+    "api/**/*.js": {
+      "includeFiles": "api-src/**"
+    }
+  },
   "rewrites": [
-    { "source": "/whitepaper", "destination": "/whitepaper/index.html" }
+    { "source": "/totalSupply", "destination": "/api/token-info?q=totalSupply" },
+    { "source": "/circulationSupply", "destination": "/api/token-info?q=circulationSupply" },
+    { "source": "/amountBurned", "destination": "/api/token-info?q=amountBurned" },
+    { "source": "/tradingData", "destination": "/api/token-info?q=tradingData" },
+    { "source": "/whitepaper", "destination": "/whitepaper/index.html" },
+    { "source": "/privacy", "destination": "/privacy/index.html" },
+    { "source": "/terms", "destination": "/terms/index.html" }
   ],
   "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [

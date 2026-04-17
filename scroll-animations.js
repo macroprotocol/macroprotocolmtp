@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'mtp-visa-section': 'fadeIn',
     'resources-section': 'slideUp',
     'faq': 'fadeIn',
-    'trust-section': 'slideUp',
+    'grow-assets-section': 'slideUp',
     'cta-section': 'fadeIn',
     // Add default animation for any other sections
     'default': 'slideUp'
@@ -56,8 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '.faq-item': 'slideRight',
     '.mtp-benefit-item': 'slideRight',
     '.mtp-card-display': 'slideLeft',
-    '.trust-card': 'zoomIn',
-    '.crypto-card': 'zoomIn'
+    '.trust-card': 'zoomIn'
   };
 
   // Apply initial styles

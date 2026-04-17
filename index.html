@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -65,12 +65,16 @@
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#mtp-visa">MTP Visa</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="https://apimtp.vercel.app/" target="_blank" style="color: #fbee9f; font-weight: 600;">Token
-                        API</a></li>
+                <li><a href="/api" target="_blank" style="color: #e8e9eb; font-weight: 600;">API Endpoints</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
-            <a href="/whitepaper/" class="cta-button">Whitepaper</a>
+            <div class="header-right" style="display: flex; align-items: center; gap: 15px;">
+                <div class="header-socials" style="display: flex; gap: 12px; font-size: 1.2rem;">
+                    <a href="https://x.com/macroprotocol" target="_blank" style="color: var(--text-color);"><i class="fab fa-twitter"></i></a>
+                    <a href="https://t.me/macromtp" target="_blank" style="color: var(--text-color);"><i class="fab fa-telegram"></i></a>
+                </div>
+                <a href="/whitepaper/" class="cta-button">Whitepaper</a>
+            </div>
         </nav>
 
         <div class="hero">
@@ -83,159 +87,201 @@
                         class="primary-button buy-button" target="_blank">Buy $MTP</a>
                     <a href="/whitepaper/" class="primary-button">Whitepaper</a>
                 </div>
+                <div class="hero-resources animate-on-scroll fade-in delay-300">
+                    <span class="hero-resources-label">Official Resources:</span>
+                    <div class="hero-resource-icons">
+                        <a href="https://coinmarketcap.com/currencies/macro-protocol/" target="_blank" title="CoinMarketCap"><i class="fas fa-chart-line"></i></a>
+                        <a href="https://t.me/macromtp" target="_blank" title="Telegram Group"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://x.com/macroprotocol" target="_blank" title="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/macroprotocol" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://coinmarketcap.com/community/profile/ProtocolMTP/" target="_blank" title="CMC Community"><i class="fas fa-users"></i></a>
+                        <a href="https://contractwolf.io/projects/macro-protocol" target="_blank" title="Audit"><i class="fas fa-shield-alt"></i></a>
+                        <a href="https://www.dx.app/dxlock/view/liquidity-locker?address=0xb44dbF91584E60834CA27555aEB5adD26835e81D&chain=56" target="_blank" title="Liquidity Locker"><i class="fas fa-lock"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="hero-image animate-on-scroll slide-left delay-300">
-                <div class="crypto-card">
-                    <div class="card-background-circle"></div>
-                    <div class="card-chip"></div>
-                    <div class="card-logo">MACRO<span>PROTOCOL</span></div>
-                    <div class="ce-mark">CE</div>
-                    <div class="card-number">
-                        <span>4859</span>
-                        <span>1234</span>
-                        <span>5678</span>
-                        <span>9012</span>
-                    </div>
-                    <div class="card-details">
-                        <div class="card-holder">
-                            <div class="label">CARD HOLDER</div>
-                            <div class="name">SATOSHI NAKAMOTO</div>
+                <div class="cards-stack">
+                    <!-- Bottom Card (White) -->
+                    <div class="crypto-card card-bottom">
+                        <div class="card-logo" style="color: #333;">MACRO<span style="color: #666;">PROTOCOL</span></div>
+                        <div class="card-number" style="color: #333;">
+                            <span>4859</span>
+                            <span>1234</span>
+                            <span>5678</span>
+                            <span>9012</span>
                         </div>
-                        <div class="card-expires">
-                            <div class="label">EXPIRES</div>
-                            <div class="date">00/00</div>
+                        <div class="card-details">
+                            <div class="card-holder">
+                                <div class="label" style="color: #666;">CARD HOLDER</div>
+                                <div class="name" style="color: #333;">SATOSHI NAKAMOTO</div>
+                            </div>
+                            <div class="card-expires">
+                                <div class="label" style="color: #666;">EXPIRES</div>
+                                <div class="date" style="color: #333;">00/00</div>
+                            </div>
+                        </div>
+                        <div class="credit-text" style="color: #1da1f2;">CREDIT</div>
+                    </div>
+                    
+                    <!-- Middle Card (Silver) -->
+                    <div class="crypto-card card-middle">
+                        <div class="card-logo" style="color: #fff;">MACRO<span style="color: #eee;">PROTOCOL</span></div>
+                        <div class="card-number" style="color: #fff;">
+                            <span>4859</span>
+                            <span>1234</span>
+                            <span>5678</span>
+                            <span>9012</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-holder">
+                                <div class="label" style="color: #eee;">CARD HOLDER</div>
+                                <div class="name" style="color: #fff;">SATOSHI NAKAMOTO</div>
+                            </div>
+                            <div class="card-expires">
+                                <div class="label" style="color: #eee;">EXPIRES</div>
+                                <div class="date" style="color: #fff;">00/00</div>
+                            </div>
+                        </div>
+                        <div class="credit-text" style="color: #ffffff;">CREDIT</div>
+                    </div>
+
+                    <!-- Top Card (Black) -->
+                    <div class="crypto-card card-top">
+                        <div class="card-background-circle"></div>
+                        <div class="card-logo">MACRO<span>PROTOCOL</span></div>
+                        <div class="card-number">
+                            <span>4859</span>
+                            <span>1234</span>
+                            <span>5678</span>
+                            <span>9012</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-holder">
+                                <div class="label">CARD HOLDER</div>
+                                <div class="name">SATOSHI NAKAMOTO</div>
+                            </div>
+                            <div class="card-expires">
+                                <div class="label">EXPIRES</div>
+                                <div class="date">00/00</div>
+                            </div>
+                        </div>
+                        <div class="credit-text">CREDIT</div>
+                        <div class="card-network">
+                            <div class="network-type">AUTHENTIC SIGNATURE. NOT VALID UNLESS SIGNED</div>
                         </div>
                     </div>
-                    <div class="card-network">
-                        <div class="network-type">AUTHENTIC SIGNATURE. NOT VALID UNLESS SIGNED</div>
-                        <div class="visa-logo">VISA</div>
-                    </div>
-                    <div class="swipe-logo">swipe</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="resources" class="resources-section animate-on-scroll slide-up">
+    <div class="partners-banner">
+        <div class="partners-track">
+            <div class="partner-item"><i class="fab fa-bitcoin"></i> Binance Smart Chain</div>
+            <div class="partner-item"><i class="fas fa-coins"></i> PancakeSwap</div>
+            <div class="partner-item"><i class="fas fa-chart-pie"></i> CoinMarketCap</div>
+            <div class="partner-item"><i class="fas fa-shield-alt"></i> Contract Wolf</div>
+            <div class="partner-item"><i class="fab fa-ethereum"></i> Ethereum</div>
+            <div class="partner-item"><i class="fas fa-credit-card"></i> Visa Network</div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="partner-item"><i class="fab fa-bitcoin"></i> Binance Smart Chain</div>
+            <div class="partner-item"><i class="fas fa-coins"></i> PancakeSwap</div>
+            <div class="partner-item"><i class="fas fa-chart-pie"></i> CoinMarketCap</div>
+            <div class="partner-item"><i class="fas fa-shield-alt"></i> Contract Wolf</div>
+            <div class="partner-item"><i class="fab fa-ethereum"></i> Ethereum</div>
+            <div class="partner-item"><i class="fas fa-credit-card"></i> Visa Network</div>
+        </div>
+    </div>
+
+    <section id="features" class="global-spending-section animate-on-scroll slide-up">
         <div class="container">
-            <h2 class="text-center"><span class="highlight">Official</span> Resources</h2>
-            <div class="separator">
-                <div class="line"></div>
-                <i class="fas fa-link"></i>
-                <div class="line"></div>
-            </div>
-            <div class="attention-badge">OFFICIAL PROJECT LINKS & RESOURCES</div>
-
-            <div class="resources-container">
-                <a href="https://coinmarketcap.com/currencies/macro-protocol/"
-                    class="resource-item animate-on-scroll slide-up stagger-item" target="_blank">
-                    <div class="resource-icon coinmarketcap-icon">
-                        <i class="fas fa-chart-line"></i>
+            <div class="spending-layout">
+                <!-- Text Content (Left) -->
+                <div class="spending-content text-left">
+                    <h2 class="global-spending-title">Spend Crypto,<br>Stay <span class="highlight">Macro</span></h2>
+                    <p class="spending-description">
+                        Reimagine your crypto with Macro Protocol. MTP Card is a significant step towards offering a seamless and secure way to spend your digital assets like cash. Your bills, simplified with MTP Card.
+                    </p>
+                    <div class="spending-logo">
+                        MacroProtocol <span style="font-weight: 400; opacity: 0.8;">MTPCard</span>
                     </div>
-                    <div class="resource-info">
-                        <div class="resource-name">CoinMarketCap <i class="fas fa-check-circle verified-badge"></i>
+                </div>
+                
+                <!-- Graphic Content (Right) -->
+                <div class="spending-graphic-right">
+                    <!-- Curved background shape -->
+                    <div class="graphic-bg-curve"></div>
+                    
+                    <!-- Floating Icons -->
+                    <div class="floating-icon-item item-1">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="floating-icon-item item-2">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="floating-icon-item item-3">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="floating-icon-item item-4">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="floating-icon-item item-5">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="floating-icon-item item-6">
+                        <i class="fab fa-ethereum"></i>
+                    </div>
+
+                    <!-- Base Platform -->
+                    <div class="platform-base">
+                        <div class="platform-top"></div>
+                        <div class="platform-body"></div>
+                        <div class="platform-shadow"></div>
+                    </div>
+
+                    <!-- Floating Card -->
+                    <div class="showcase-card">
+                        <div class="card-glow-line line-1"></div>
+                        <div class="card-glow-line line-2"></div>
+                        
+                        <div class="card-top-row">
+                            <div class="card-logo">MACRO</div>
                         </div>
-                        <div class="resource-description">View real-time market data</div>
-                    </div>
-                </a>
-
-                <a href="https://t.me/macromtp" class="resource-item animate-on-scroll slide-up stagger-item"
-                    target="_blank">
-                    <div class="resource-icon telegram-icon">
-                        <i class="fab fa-telegram-plane"></i>
-                    </div>
-                    <div class="resource-info">
-                        <div class="resource-name">Telegram Group <i class="fas fa-check-circle verified-badge"></i>
+                        
+                        <div class="card-bottom-row">
+                            <div class="card-type">DEBIT</div>
+                            <div class="card-visa">VISA</div>
                         </div>
-                        <div class="resource-description">Join our active community of 1,111+ members</div>
                     </div>
-                </a>
-
-                <a href="https://x.com/macroprotocol" class="resource-item animate-on-scroll slide-up stagger-item"
-                    target="_blank">
-                    <div class="resource-icon twitter-icon">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                    <div class="resource-info">
-                        <div class="resource-name">X (Twitter) <i class="fas fa-check-circle verified-badge"></i></div>
-                        <div class="resource-description">Follow for updates and announcements</div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/macroprotocol" class="resource-item animate-on-scroll slide-up stagger-item"
-                    target="_blank">
-                    <div class="resource-icon github-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <div class="resource-info">
-                        <div class="resource-name">GitHub <i class="fas fa-check-circle verified-badge"></i></div>
-                        <div class="resource-description">Access our contracts and documentation</div>
-                    </div>
-                </a>
-
-                <a href="https://coinmarketcap.com/community/profile/MacroProtocolMTP/"
-                    class="resource-item animate-on-scroll slide-up stagger-item" target="_blank">
-                    <div class="resource-icon community-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="resource-info">
-                        <div class="resource-name">CMC Community <i class="fas fa-check-circle verified-badge"></i>
-                        </div>
-                        <div class="resource-description">Join our active community on CMC</div>
-                    </div>
-                </a>
-
-                <a href="https://contractwolf.io/projects/macro-protocol"
-                    class="resource-item animate-on-scroll slide-up stagger-item" target="_blank">
-                    <div class="resource-icon audit-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="resource-info">
-                        <div class="resource-name">Audit <i class="fas fa-check-circle verified-badge"></i></div>
-                        <div class="resource-description">View our Contract Wolf audit</div>
-                    </div>
-                </a>
-
-                <a href="https://www.dx.app/dxlock/view/liquidity-locker?address=0xb44dbF91584E60834CA27555aEB5adD26835e81D&chain=56"
-                    class="resource-item animate-on-scroll slide-up stagger-item" target="_blank">
-                    <div class="resource-icon liquidity-icon">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="resource-info">
-                        <div class="resource-name">Liquidity Locker <i class="fas fa-check-circle verified-badge"></i>
-                        </div>
-                        <div class="resource-description">Verify locked liquidity for added security</div>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="features" class="features animate-on-scroll slide-up">
-        <h2>Powerful <span class="highlight">Features</span></h2>
-        <div class="features-grid">
-            <div class="feature-card stagger-item">
-                <div class="feature-icon"><i class="fas fa-globe"></i></div>
-                <h3>Global Acceptance</h3>
-                <p>Use your Macro Protocol card anywhere traditional credit cards are accepted.</p>
-            </div>
-            <div class="feature-card stagger-item">
-                <div class="feature-icon"><i class="fas fa-lock"></i></div>
-                <h3>Enhanced Security</h3>
-                <p>Blockchain technology provides unmatched security for all your transactions.</p>
-            </div>
-            <div class="feature-card stagger-item">
-                <div class="feature-icon"><i class="fas fa-coins"></i></div>
-                <h3>Crypto Rewards</h3>
-                <p>Earn Macro tokens with every purchase, building your crypto portfolio.</p>
-            </div>
-            <div class="feature-card stagger-item">
-                <div class="feature-icon"><i class="fas fa-exchange-alt"></i></div>
-                <h3>Instant Conversion</h3>
-                <p>Seamlessly convert between crypto and fiat currencies at competitive rates.</p>
+    <!-- Order Modal -->
+    <div id="order-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeOrderModal()">&times;</span>
+            <h3 id="modal-plan-name">Order Card</h3>
+            <div class="modal-body">
+                <p>Pay with your wallet to secure your physical card.</p>
+                <div class="payment-details">
+                    <div class="detail-row">
+                        <span>Plan Cost:</span>
+                        <span id="modal-plan-cost" class="highlight">0 MTP</span>
+                    </div>
+                    <div class="detail-row reward-row">
+                        <span>Instant Reward (5%):</span>
+                        <span id="modal-plan-reward" style="color: #4ade80;">+0 MTP</span>
+                    </div>
+                </div>
+                <button class="primary-button full-width" id="confirm-order-btn" onclick="processOrder()">
+                    <i class="fas fa-wallet"></i> Connect Wallet & Pay
+                </button>
             </div>
         </div>
-    </section>
+    </div>
 
     <section id="mtp-visa" class="mtp-visa-section animate-on-scroll fade-in">
         <div class="container">
@@ -250,8 +296,7 @@
                         <div class="mtp-benefit-content">
                             <div class="mtp-benefit-title">Zero Fees</div>
                             <div class="mtp-benefit-text">
-                                Your MTP Visa Card is <strong>completely free!</strong> We will not charge any
-                                administrative or processing fees*.
+                                Your MTP Visa Card is <strong>completely free!</strong> We will not charge any administrative or processing fees*.
                             </div>
                             <div class="mtp-benefit-footnote">*Third-party fees might be still applicable</div>
                         </div>
@@ -262,28 +307,96 @@
                             <i class="fas fa-exchange-alt"></i>
                         </div>
                         <div class="mtp-benefit-content">
-                            <div class="mtp-benefit-title">Hold crypto and exchange only when you need to</div>
+                            <div class="mtp-benefit-title">Instant Conversion</div>
                             <div class="mtp-benefit-text">
-                                Hold crypto in your MTP Funding Wallet and exchange <strong>only when you're making
-                                    payments.</strong>
+                                Hold crypto in your MTP Funding Wallet and exchange <strong>only when you're making payments.</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mtp-benefit-item animate-on-scroll slide-right stagger-item">
+                        <div class="mtp-benefit-circle">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="mtp-benefit-content">
+                            <div class="mtp-benefit-title">Global Acceptance</div>
+                            <div class="mtp-benefit-text">
+                                Use your MTP Visa Card anywhere in the world. Withdraw fiat from millions of ATMs or shop online and offline effortlessly.
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="mtp-visa-card-image animate-on-scroll slide-left delay-300">
-                    <div class="mtp-card-display">
-                        <div class="crypto-card mtp-card">
+                    <div class="cards-stack" style="transform: scale(1.1);">
+                        <!-- Bottom Card (White) -->
+                        <div class="crypto-card card-bottom">
+                            <div class="card-logo" style="color: #333;">MACRO<span style="color: #666;">PROTOCOL</span></div>
+                            <div class="card-number" style="color: #333;">
+                                <span>4859</span>
+                                <span>1234</span>
+                                <span>5678</span>
+                                <span>9012</span>
+                            </div>
+                            <div class="card-details">
+                                <div class="card-holder">
+                                    <div class="label" style="color: #666;">CARD HOLDER</div>
+                                    <div class="name" style="color: #333;">SATOSHI NAKAMOTO</div>
+                                </div>
+                                <div class="card-expires">
+                                    <div class="label" style="color: #666;">EXPIRES</div>
+                                    <div class="date" style="color: #333;">00/00</div>
+                                </div>
+                            </div>
+                            <div class="credit-text" style="color: #1da1f2;">VISA MTP</div>
+                        </div>
+                        
+                        <!-- Middle Card (Silver) -->
+                        <div class="crypto-card card-middle">
+                            <div class="card-logo" style="color: #fff;">MACRO<span style="color: #eee;">PROTOCOL</span></div>
+                            <div class="card-number" style="color: #fff;">
+                                <span>4859</span>
+                                <span>1234</span>
+                                <span>5678</span>
+                                <span>9012</span>
+                            </div>
+                            <div class="card-details">
+                                <div class="card-holder">
+                                    <div class="label" style="color: #eee;">CARD HOLDER</div>
+                                    <div class="name" style="color: #fff;">SATOSHI NAKAMOTO</div>
+                                </div>
+                                <div class="card-expires">
+                                    <div class="label" style="color: #eee;">EXPIRES</div>
+                                    <div class="date" style="color: #fff;">00/00</div>
+                                </div>
+                            </div>
+                            <div class="credit-text" style="color: #ffffff;">VISA MTP</div>
+                        </div>
+
+                        <!-- Top Card (Black) -->
+                        <div class="crypto-card card-top">
                             <div class="card-background-circle"></div>
-                            <div class="card-logo-top">
-                                <span class="macro-text">MACRO</span> <span class="protocol-text">PROTOCOL</span>
+                            <div class="card-logo">MACRO<span>PROTOCOL</span></div>
+                            <div class="card-number">
+                                <span>4859</span>
+                                <span>1234</span>
+                                <span>5678</span>
+                                <span>9012</span>
                             </div>
-                            <div class="card-number">4859 1234 5678 9012</div>
-                            <div class="card-holder-info">
-                                <div class="card-holder">SATOSHI NAKAMOTO</div>
-                                <div class="card-expires">00/00</div>
+                            <div class="card-details">
+                                <div class="card-holder">
+                                    <div class="label">CARD HOLDER</div>
+                                    <div class="name">SATOSHI NAKAMOTO</div>
+                                </div>
+                                <div class="card-expires">
+                                    <div class="label">EXPIRES</div>
+                                    <div class="date">00/00</div>
+                                </div>
                             </div>
-                            <div class="visa-logo-mtp">VISA<span>MTP</span></div>
+                            <div class="credit-text">VISA MTP</div>
+                            <div class="card-network">
+                                <div class="network-type">AUTHENTIC SIGNATURE. NOT VALID UNLESS SIGNED</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,81 +404,214 @@
         </div>
     </section>
 
-    <section class="trust-section animate-on-scroll fade-in" id="trust">
+    <section id="app-features" class="app-features-section animate-on-scroll fade-in">
         <div class="container">
-            <h2>Why <span class="highlight">Trust</span> Macro Protocol?</h2>
-
-            <div class="trust-grid">
-                <div class="trust-card stagger-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-shield-alt"></i>
+            <div class="app-features-layout">
+                <!-- Text Content (Left) -->
+                <div class="app-features-content">
+                    <div class="app-feature-block animate-on-scroll slide-right stagger-item">
+                        <h3>Create your MTP card in minutes</h3>
+                        <p>Go from sign-up to spending in just 2-3 minutes. No bank account needed. A variety of IDs accepted.</p>
                     </div>
-                    <div class="trust-stat">100%</div>
-                    <div class="trust-label">Transparent</div>
-                    <p>All operations are publicly verifiable on the blockchain.</p>
+                    
+                    <div class="app-feature-block animate-on-scroll slide-right stagger-item">
+                        <h3>Spend or save stablecoins and crypto</h3>
+                        <p>Bring USDT, USDC & BNB to Macro Protocol, with more tokens and stablecoins coming soon. Our cards work with Apple Pay, Google Pay, and are accepted by over 100M+ merchants globally.</p>
+                    </div>
+                    
+                    <div class="app-feature-block animate-on-scroll slide-right stagger-item">
+                        <h3>Privacy and security is our top priority</h3>
+                        <p>Your trust is non-negotiable. Period. All funds are fully reserved, and held using the leading Web3 technologies.</p>
+                    </div>
                 </div>
 
-                <div class="trust-card stagger-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-lock"></i>
+                <!-- Phone Mockup (Right) -->
+                <div class="app-features-mockup animate-on-scroll slide-left">
+                    <div class="phone-frame">
+                        <div class="phone-notch">
+                            <div class="camera-lens"></div>
+                        </div>
+                        <div class="phone-screen">
+                            <!-- Status Bar -->
+                            <div class="status-bar">
+                                <span class="time">9:41</span>
+                                <div class="status-icons">
+                                    <i class="fas fa-signal"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-battery-full"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- App Header -->
+                            <div class="app-header">
+                                <i class="fas fa-bars"></i>
+                                <div class="right-icons">
+                                    <i class="fas fa-credit-card"></i>
+                                    <i class="far fa-bell"></i>
+                                </div>
+                            </div>
+
+                            <!-- App Card -->
+                            <div class="mockup-card">
+                                <div class="mockup-card-bg"></div>
+                                <div class="mockup-card-top">
+                                    <div class="mockup-card-logo">
+                                        <span class="m-icon" style="color: var(--primary-color);"><i class="fas fa-wallet"></i></span> MTP Card
+                                    </div>
+                                </div>
+                                <div class="mockup-card-chip" style="display:none;"></div>
+                                <div class="mockup-card-bottom" style="display:none;">
+                                    <span class="mockup-card-number">**** **** **** 9012</span>
+                                    <span class="mockup-card-visa">VISA</span>
+                                </div>
+                            </div>
+
+                            <!-- Balance -->
+                            <div class="mockup-balance">
+                                <span class="label">BALANCE</span>
+                                <h2><span>$</span>36,400.12</h2>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="mockup-actions">
+                                <button class="mockup-btn">Receive</button>
+                                <button class="mockup-btn">Send</button>
+                            </div>
+
+                            <!-- Transaction Summary -->
+                            <div class="mockup-banner">
+                                <div class="banner-icon" style="color: var(--primary-color);"><i class="fas fa-exchange-alt"></i></div>
+                                <div class="banner-text">
+                                    <h4>Recent Activity</h4>
+                                    <p>Total sent: 170.00 MTP | Total received: 1,500.00 MTP</p>
+                                </div>
+                            </div>
+
+                            <!-- Transactions -->
+                            <div class="mockup-transactions">
+                                <div class="tx-item">
+                                    <div class="tx-icon green"><i class="fas fa-arrow-down"></i></div>
+                                    <div class="tx-info">
+                                        <h4>Staking Reward</h4>
+                                        <p>Received MTP</p>
+                                    </div>
+                                    <div class="tx-amount positive">
+                                        + 1,500.00 MTP
+                                        <span>29 Mar - 5:14 PM</span>
+                                    </div>
+                                </div>
+                                <div class="tx-item">
+                                    <div class="tx-icon"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="tx-info">
+                                        <h4>Shopping</h4>
+                                        <p>MTP paid for Shopping</p>
+                                    </div>
+                                    <div class="tx-amount negative">
+                                        - 120.00 MTP
+                                        <span>29 Mar - 2:41 PM</span>
+                                    </div>
+                                </div>
+                                <div class="tx-item">
+                                    <div class="tx-icon"><i class="fas fa-money-bill-wave"></i></div>
+                                    <div class="tx-info">
+                                        <h4>ATM Withdrawal</h4>
+                                        <p>MTP paid for ATM</p>
+                                    </div>
+                                    <div class="tx-amount negative">
+                                        - 50.00 MTP
+                                        <span>28 Mar - 1:13 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bottom Navigation -->
+                            <div class="mockup-bottom-nav">
+                                <div class="nav-item active">
+                                    <i class="fas fa-layer-group"></i>
+                                    <span>CASH</span>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="far fa-heart"></i>
+                                    <span>REFER</span>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="fas fa-coins"></i>
+                                    <span>REWARDS</span>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="fas fa-cut"></i>
+                                    <span>CONCIERGE</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="trust-stat">Secure</div>
-                    <div class="trust-label">Protocol</div>
-                    <p>Multi-layered security measures protect your assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="grow-assets-section animate-on-scroll fade-in" id="earn">
+        <div class="container">
+            <h2 class="section-title">Continuously Grow Your Assets.</h2>
+
+            <div class="bento-grid">
+                <!-- Simple Earn Card -->
+                <div class="bento-card card-large simple-earn-card">
+                    <div class="bento-content">
+                        <div class="bento-header earn-header">
+                            <i class="fas fa-coins"></i>
+                            <h3>Simple Earn</h3>
+                        </div>
+                        <p><strong>Maximize your crypto savings.</strong> Choose between Flexible and Fixed-term Earnings to match your goals, securing a competitive APR of up to 10%.</p>
+                        <p><strong>One-Click Funding, Instant Rewards.</strong> Deposit your tokens effortlessly and activate your daily interest stream right away.</p>
+                    </div>
+                    <!-- Using a placeholder or an appropriate class to style background illustration later -->
+                    <div class="bento-image-container simple-earn-container">
+                        <a href="#" class="start-earning-btn">Start Earning <i class="fas fa-chevron-right"></i></a>
+                        <div class="bento-image simple-earn-img"></div>
+                    </div>
                 </div>
 
-                <div class="trust-card stagger-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-check-circle"></i>
+                <!-- Recurring Buy Card -->
+                <div class="bento-card card-small row-layout">
+                    <div class="bento-content">
+                        <div class="bento-header">
+                            <i class="fas fa-sync-alt"></i>
+                            <h3>Recurring Buy</h3>
+                        </div>
+                        <p>Set up an automated Recurring Buy plan to adopt the DCA strategy, effectively smoothing out market volatility and steadily building your digital wealth over time.</p>
                     </div>
-                    <div class="trust-stat">Verified</div>
-                    <div class="trust-label">Contract</div>
-                    <p>Smart contracts audited by leading security firms.</p>
+                    <div class="bento-image recurring-buy-img"></div>
                 </div>
 
-                <div class="trust-card stagger-item">
-                    <div class="trust-icon">
-                        <i class="fas fa-users"></i>
+                <!-- Loan Card -->
+                <div class="bento-card card-small row-layout">
+                    <div class="bento-content">
+                        <div class="bento-header">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <h3>Loan</h3>
+                        </div>
+                        <p>Pledge your BTC/ETH holdings to quickly borrow stablecoins or tokens, securing instant liquidity right when you need it without selling your valuable assets.</p>
                     </div>
-                    <div class="trust-stat">Growing</div>
-                    <div class="trust-label">Community</div>
-                    <p>Join thousands of users already benefiting from Macro.</p>
+                    <div class="bento-image loan-img"></div>
                 </div>
             </div>
 
-            <div class="whitepaper-highlights animate-on-scroll slide-up delay-300">
-                <h3>Highlights from our <span class="highlight">Whitepaper</span></h3>
-
-                <div class="highlights-container">
-                    <div class="highlight-item animate-on-scroll slide-right stagger-item">
-                        <i class="fas fa-fingerprint"></i>
-                        <div class="highlight-content">
-                            <h4>Decentralized Identity</h4>
-                            <p>Our blockchain-based identity system eliminates traditional credit checks while
-                                maintaining security.</p>
-                        </div>
-                    </div>
-
-                    <div class="highlight-item animate-on-scroll slide-right stagger-item">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="highlight-content">
-                            <h4>Financial Model</h4>
-                            <p>Carefully designed economics with mechanisms to support long-term value.</p>
-                        </div>
-                    </div>
-
-                    <div class="highlight-item animate-on-scroll slide-right stagger-item">
-                        <i class="fas fa-rocket"></i>
-                        <div class="highlight-content">
-                            <h4>Growth Strategy</h4>
-                            <p>Clear roadmap for global expansion and partnerships with major financial institutions.
-                            </p>
-                        </div>
-                    </div>
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="stat-item">
+                    <h4>10% APR</h4>
+                    <p>Highest APR</p>
                 </div>
-
-                <div class="cta-centered">
-                    <a href="/whitepaper/" class="primary-button whitepaper-button">Read Whitepaper</a>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h4>Flexible</h4>
+                    <p>Repayment</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h4>Trusted</h4>
+                    <p>Since 2018</p>
                 </div>
             </div>
         </div>
