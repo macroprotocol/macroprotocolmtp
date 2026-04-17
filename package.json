@@ -2,7 +2,6 @@
   "name": "mtpwebsite",
   "version": "1.0.0",
   "description": "This is the official website for Macro Protocol, a cryptocurrency credit card platform.",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

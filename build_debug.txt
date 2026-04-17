@@ -1,0 +1,32 @@
+> [debug] [2026-04-17T08:49:25.667Z] Found config in file "C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolmtp\vercel.json"
+> [debug] [2026-04-17T08:49:25.669Z] Vercel CLI 51.1.0
+> [debug] [2026-04-17T08:49:25.692Z] Agent/TTY/nonInteractive: isAgent=true agentName=antigravity stdin.isTTY=true --non-interactive=false explicitFalse=false => nonInteractive=false
+> [debug] [2026-04-17T08:49:25.694Z] user supplied known subcommand: "build"
+> [debug] [2026-04-17T08:49:25.779Z] Setting target to production
+WARNING! Build not running on Vercel. System environment variables will not be available.
+> [debug] [2026-04-17T08:49:25.819Z] Loaded environment variables from "C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolmtp\.vercel\.env.production.local"
+> [debug] [2026-04-17T08:49:25.890Z] vercel-flags: checking env vars for SDK Keys
+> [debug] [2026-04-17T08:49:25.892Z] vercel-flags: found 0 SDK keys
+> [debug] [2026-04-17T08:49:25.896Z] Locating files C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolmtp
+> [debug] [2026-04-17T08:49:25.900Z] Ignoring C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolmtp\.env.local
+> [debug] [2026-04-17T08:49:25.901Z] Ignoring C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolmtp\.git
+> [debug] [2026-04-17T08:49:25.902Z] Ignoring C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolmtp\.gitignore
+> [debug] [2026-04-17T08:49:25.902Z] Ignoring C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolmtp\.vercel
+> [debug] [2026-04-17T08:49:25.905Z] Ignoring C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolmtp\node_modules
+> [debug] [2026-04-17T08:49:25.910Z] Locating files C:\Users\LENOVO\OneDrive\Desktop\copy version\macroprotocolmtp [14ms]
+> [debug] [2026-04-17T08:49:26.817Z] Imported Builder "@vercel/node" from "C:\Users\LENOVO\AppData\Roaming\npm\node_modules\vercel\node_modules\@vercel\node"
+> [debug] [2026-04-17T08:49:26.911Z] Imported Builder "@vercel/static-build" from "C:\Users\LENOVO\AppData\Roaming\npm\node_modules\vercel\node_modules\@vercel\static-build"
+> [debug] [2026-04-17T08:49:26.912Z] Resolved builders: "@vercel/node => 5.7.4, @vercel/static-build => 2.9.12"
+> [debug] [2026-04-17T08:49:26.936Z] Setting env VERCEL_PROJECT_SETTINGS_BUILD_COMMAND to "npm run build"
+> [debug] [2026-04-17T08:49:26.936Z] Setting env VERCEL_PROJECT_SETTINGS_OUTPUT_DIRECTORY to "dist"
+> [debug] [2026-04-17T08:49:26.936Z] Setting env VERCEL_PROJECT_SETTINGS_NODE_VERSION to "24.x"
+> [debug] [2026-04-17T08:49:26.936Z] Building entrypoint "package.json" with "@vercel/static-build"
+Installing dependencies...
+
+up to date in 2s
+
+27 packages are looking for funding
+  run `npm fund` for details
+Error: spawn cmd.exe ENOENT
+> [debug] [2026-04-17T08:49:31.130Z] Telemetry subprocess killed due to timeout
+> [debug] [2026-04-17T08:49:31.152Z] Telemetry subprocess exited with code null
